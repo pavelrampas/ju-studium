@@ -1,0 +1,11 @@
+body{margin: 10px;font-family: arial;}
+table{width: 100%;border-collapse: collapse;}
+table, td{border: #000 solid 1px;}
+td{width: 4%;}
+td.v{color: #ccc;text-decoration: line-through;}
+td.p{background-color: #ff0000}
+h1{margin: 0;}
+p{margin: 5px 0;}
+span#pocet{width: 50%;font-weight: bold;}
+span#zbyva{width: 50%;margin-left: 300px;font-weight: bold;}
+input#automat{margin: 8px 5px 0 0;}

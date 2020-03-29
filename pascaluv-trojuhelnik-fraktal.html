@@ -6,14 +6,6 @@
         <meta charset="UTF-8">
         <meta name="author" content="Pavel Rampas">
         <meta name="viewport" content="width=device-width">
-        <style>
-            body{margin: 10px;font-family: arial;}
-            h1{margin: 0;}
-            p{margin: 5px 0;}
-            div{width: 100%; text-align: center;font-size: 1px;white-space: nowrap;}
-            .t,.f{width: 3px;height: 3px;display: inline-block;}
-            .t{background-color: #0000ff;}
-        </style>
     </head>
     <body>
         <p><a href="index.html">zpět na index</a></p>
@@ -29,70 +21,7 @@
         </p>
         <br>
         <div id="t"></div>
-        <script>
-            var pocet = 0; // pocet stupnu
-            var div; // div do ktereho se vkladaji data
-
-            function reset(){
-                div.innerHTML = '';
-                document.getElementById('pocet').value = '';
-            }
-
-            // vypocitava jednotlive stupne
-            function vykresli() {
-                // nacteni hodnot
-                pocet = parseInt(document.getElementById('pocet').value);
-                div = document.getElementById('t');
-
-                // vymazani obsahu a nastaveni sirky
-                div.innerHTML = "";
-                div.style.width = pocet * 6 + "px";
-
-                // vypis prvnich dvou stupnu
-                vypis(true, true);
-                vypis(true, false);
-                vypis(true, true);
-
-                // vypis zbylych stupnu
-                var pole = [true, true];
-                for (var i = 0; i <= pocet - 3; i++) {
-                    var nove_pole = [];
-                    nove_pole.push(true);
-                    vypis(true, false);
-
-                    for (var j = 0; j <= pole.length - 2; j++) {
-                        if ((pole[j] && pole[j + 1]) || (!pole[j] && !pole[j + 1])) {
-                            vypis(false, false);
-                            nove_pole.push(false);
-                        } else {
-                            vypis(true, false);
-                            nove_pole.push(true);
-                        }
-                    }
-
-                    vypis(true, true);
-                    nove_pole.push(true);
-                    pole = nove_pole;
-                }
-
-                // posunuti na stred stranky
-                window.scrollTo(((pocet * 6) / 2) - 600, 0);
-            }
-
-            // graficky vystup
-            function vypis(co, konec) {
-                var span = document.createElement("span");
-                span.appendChild(document.createTextNode("."));
-                if (co) {
-                    span.setAttribute("class", "t");
-                } else {
-                    span.setAttribute("class", "f");
-                }
-                div.appendChild(span);
-                if (konec) {
-                    div.appendChild(document.createElement("br"));
-                }
-            }
-        </script>
+		<link rel="stylesheet" href="/pascaluv-trojuhelnik-fraktal.css?v=1">
+		<script src="/pascaluv-trojuhelnik-fraktal.js?v=1"></script>
     </body>
 </html>

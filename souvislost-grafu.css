@@ -1,0 +1,9 @@
+body{margin: 10px;font-family: arial;}
+h1{margin: 0;}
+p{margin: 5px 0;}
+div{width: 100%; text-align: left;}
+table{width: 100%;line-height: 1.4;}
+.hlavni{border-collapse: collapse;}
+.okraj{border: #000 solid 1px;padding: 5px;vertical-align: top;width: 50%;}
+td.l{width: 10%;}
+td.p{width: 90%;}
