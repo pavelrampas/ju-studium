@@ -9,6 +9,9 @@ var posledni = 2; // posledni prvocislo
 // vypnuti tlacitka krok pred zadavanim hodnot
 document.getElementById('krok').setAttribute('disabled', 'disabled');
 
+document.getElementById('vykresli').addEventListener('click', vykresli);
+document.getElementById('krok').addEventListener('click', krok);
+
 // nastaveni hodnot a vykresleni tabulky s cislama
 function vykresli() {
 	zacatek = parseInt(document.getElementById('od').value);

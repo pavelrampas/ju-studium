@@ -6,6 +6,9 @@ var nesoudelnaCisla = [];
 var nesoudelnaCisla1 = [];
 var nastaveni = 0;
 
+document.getElementById('zpracuj').addEventListener('click', zpracuj);
+document.getElementById('reset').addEventListener('click', reset);
+
 function zpracuj() {
 	// nacteni cisla ze vstupu
 	vstup = parseInt(document.getElementById('vstup').value);

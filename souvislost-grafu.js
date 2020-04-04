@@ -5,6 +5,9 @@ var poleVrcholu = []; // pole vrcholu
 var prosleVrcholyCelkem = []; // prosle vrcholy celkem
 var vysledek = true;
 
+document.getElementById('vykresli').addEventListener('click', vykresli);
+document.getElementById('reset').addEventListener('click', reset);
+
 function vykresli() {
 	// nacteni hodnot
 	vstup = document.getElementById('hrany').value;

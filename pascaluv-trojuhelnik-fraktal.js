@@ -1,6 +1,9 @@
 var pocet = 0; // pocet stupnu
 var div; // div do ktereho se vkladaji data
 
+document.getElementById('vykresli').addEventListener('click', vykresli);
+document.getElementById('reset').addEventListener('click', reset);
+
 function reset(){
 	div.innerHTML = '';
 	document.getElementById('pocet').value = '';
