@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Pavel Rampas">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/eratosthenovo-sito.css?v=2">
     </head>
     <body>
         <p><a href="index.html">zpět na index</a></p>
@@ -18,16 +19,15 @@
         <br>
         <p>
             <span class="rozsah">Rozsah:</span>
-            Od: <input type="text" id="od"> Do: <input type="text" id="do">
+            <label for="od">Od: </label><input type="text" id="od"><label for="do"> Do: </label><input type="text" id="do">
             <input type="button" value="vykresli" id="vykresli">
             <input type="button" value="další krok" id="krok">
         </p>
-        <p><input type="checkbox" id="automat">zapnout automatické krokování</p>
+        <p><input type="checkbox" id="automat"><label for="automat">zapnout automatické krokování</label></p>
         <br>
         <p><span id="pocet">&nbsp;</span><span id="zbyva">&nbsp;</span></p>
         <br>
         <div></div>
-		<link rel="stylesheet" href="/eratosthenovo-sito.css?v=2">
-		<script src="/eratosthenovo-sito.js?v=1"></script>
+		<script src="/eratosthenovo-sito.js?v=2"></script>
     </body>
 </html>

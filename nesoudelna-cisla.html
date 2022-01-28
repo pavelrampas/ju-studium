@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Pavel Rampas">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/nesoudelna-cisla.css?v=2">
     </head>
     <body>
         <p><a href="index.html">zpět na index</a></p>
@@ -17,17 +18,17 @@
         </p>
         <br>
         <p>
-            <input type="radio" id="nastaveni1" name="nastaveni" value="1" checked>Použít všechny varianty výpočtu (<em>U velkých čísel trvá dlouho</em>)
+            <input type="radio" id="nastaveni1" name="nastaveni" value="1" checked><label for="nastaveni1">Použít všechny varianty výpočtu (<em>U velkých čísel trvá dlouho</em>)</label>
         </p><p>
-            <input type="radio" id="nastaveni2" name="nastaveni" value="2">Použít výpočet porovnání dělitelů (<em>U velkých čísel trvá dlouho</em>)
+            <input type="radio" id="nastaveni2" name="nastaveni" value="2"><label for="nastaveni2">Použít výpočet porovnání dělitelů (<em>U velkých čísel trvá dlouho</em>)</label>
         </p><p>
-            <input type="radio" id="nastaveni3" name="nastaveni" value="3">Použít výpočet porovnání rozkladů na prvočísla
+            <input type="radio" id="nastaveni3" name="nastaveni" value="3"><label for="nastaveni3">Použít výpočet porovnání rozkladů na prvočísla</label>
         </p><p>
-            <input type="radio" id="nastaveni4" name="nastaveni" value="4">Použít Eulerovo funkci
+            <input type="radio" id="nastaveni4" name="nastaveni" value="4"><label for="nastaveni4">Použít Eulerovo funkci</label>
         </p>
         <br>
         <p>
-            Číslo: <input type="text" id="vstup">
+            <label for="vstup">Číslo: </label><input type="text" id="vstup">
             <input type="button" value="vypočítej" id="zpracuj">&nbsp;&nbsp;
             <input type="button" value="reset" id="reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="info"></span>
         </p>
@@ -74,7 +75,6 @@
                 <td id="nesoudelnacisla" colspan="4">&nbsp;</td>
             </tr>
         </table>
-		<link rel="stylesheet" href="/nesoudelna-cisla.css?v=2">
 		<script src="/nesoudelna-cisla.js?v=1"></script>
     </body>
 </html>

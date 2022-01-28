@@ -9,3 +9,4 @@ p{margin: 5px 0;}
 span#pocet{width: 50%;font-weight: bold;}
 span#zbyva{width: 50%;margin-left: 300px;font-weight: bold;}
 input#automat{margin: 8px 5px 0 0;}
+input{margin: 5px;}
